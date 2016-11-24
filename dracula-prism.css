@@ -23,11 +23,6 @@ pre[class*="language-"] {
     word-spacing: 0;
 }
 
-@@media (min-wdith: 1700px) {
-  body {
-    background-color: green;
-  }
-
   code[class*="language-"] {
     width: 90%;
   }
@@ -37,6 +32,16 @@ pre[class*="language-"] {
 }
 
 @@media (min-wdith: 1600px) {
+  code[class*="language-"] {
+    width: 1500px;
+  }
+
+  pre[class*="language-"] {
+    width: 1500px;
+  }
+}
+
+@@media screen and (max-wdith: 1024px) {
   code[class*="language-"] {
     width: 1500px;
   }
