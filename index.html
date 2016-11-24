@@ -50,14 +50,6 @@
       font-size: 50px;
     }
 
-    @@media (min-wdith: 1700px)
-    {
-      body
-      {
-        background-color: green;
-      }
-    }
-
     img[dracula]
     {
       /*height: auto;
@@ -67,16 +59,15 @@
       margin-top: 50px;
     }
 
- @media (max-width: 600px)
-    {
-      img[dracula]
+   @media screen and (max-width: 600px)
       {
-        height: auto;
-        width:100%;
-        margin-top: 50px;
+        img[dracula]
+        {
+          height: auto;
+          width:100%;
+          margin-top: 50px;
+        }
       }
-
-    }
 
     p
     {
@@ -86,6 +77,14 @@
       margin-right: 30px;
       margin-top: 30px;
       text-align: center;
+    }
+
+    @media screen and (min-width: 1700px) {
+      p
+      {
+        font-size: 50px;
+      }
+
     }
 
     p.autoria
@@ -106,7 +105,7 @@
       text-align: justify;
     }
 
-    @@media screen and (min-width: 1700px)
+    @media screen and (min-width: 1700px)
     {
       p.texto
       {
@@ -992,11 +991,11 @@
   	'remove-indent': true,
   	'left-trim': true,
   	'right-trim': true,
-  	'break-lines': 10,
-  	'indent': 2,
-  	'remove-initial-line-feed': false,
-  	'tabs-to-spaces': 4,
-  	'spaces-to-tabs': 4
+  	// 'break-lines': 10,
+  	// 'indent': 2,
+  	// 'remove-initial-line-feed': false,
+  	// 'tabs-to-spaces': 4,
+  	// 'spaces-to-tabs': 4
     });
     </script>
   </body>
