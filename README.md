@@ -8,3 +8,4 @@ This theme code or pre body is using a new font called PT Mono from Google Fonts
 Observe that this theme is still in beta development, because I'm fixing the problems of mdedia queries and pre widths.
 
 You can test the demo, although it be still in beta, but you can use it without problems:
+https://gusbemacbe.github.io/draucla-prism/ 
