@@ -54,18 +54,40 @@
     p
     {
       font-size: 30px;
+      line-height: 1.6em;
       margin-left: 30px;
       margin-right: 30px;
       margin-top: 30px;
       text-align: center;
     }
 
-    p.texto {
+    p.texto
+    {
       font-size: 20px;
       margin-left: 30px;
       margin-right: 30px;
       margin-top: 30px;
       text-align: justify;
+    }
+
+    span.ptmono
+    {
+      background-color: #858fa6;
+      border-radius: 5px;
+      font-family: PT Mono, sans-serif;
+      padding: 3px;
+    }
+
+    span.ptmono::selection
+    {
+      background-color: #ff79c6;
+      border-radius: 5px;
+    }
+
+    span.ptmono::selector
+    {
+      background-color: #ff79c6;
+      border-radius: 5px;
     }
 
     .titulo
@@ -89,7 +111,7 @@
 
     <p>Is Dracula theme for Prism.js missed? Don't worry! The geek and nerdy king Dracula has just built the theme for Prism.js with his MacBook full of funny stickers!</p>
     <p class="texto">This theme was built at <a href="http://sandrashklyaeva.github.io/prism-theme-builder/">Prism Theme builder</a>, developed by Sandras Hklyaeva.
-    <br>This theme code or pre body is using a new font called PT Mono from Google Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
+    <br>This theme <code>code</code> or <code>pre</code> body is using a new font called <span class="ptmono">PT Mono</span> from <img height="25px" src="google2015.svg" /> Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
     <p class="texto">Observe that this theme is still in beta development, because I'm fixing the problems of mdedia queries and pre widths.</p>
     <p><b>CSS Code</b></p>
     <pre>
