@@ -23,40 +23,60 @@ pre[class*="language-"] {
     word-spacing: 0;
 }
 
-@@media screen and (min-wdith: 1700px) {
+@@media (min-wdith: 1700px) {
   body {
-    background-color: purple;
+    background-color: green;
+  }
+
+  code[class*="language-"] {
+    width: 90%;
   }
   pre[class*="language-"] {
     width: 90%;
   }
 }
 
-@@media screen and (min-wdith: 1600px) {
+@@media (min-wdith: 1600px) {
+  code[class*="language-"] {
+    width: 1500px;
+  }
+
   pre[class*="language-"] {
     width: 1500px;
   }
 }
 
-@@media screen and (min-wdith: 500px) {
+@@media (max-wdith: 500px) {
+  code[class*="language-"] {
+    width: 450px;
+  }
+
   pre[class*="language-"] {
     width: 450px;
   }
 }
 
-@@media screen and (min-wdith: 400px) {
+@@media (max-wdith: 400px) {
+  code[class*="language-"] {
+    width: 300px;
+  }
+
   pre[class*="language-"] {
     width: 300px;
   }
 }
 
-@@media (min-wdith: 380px) {
+@@media (max-wdith: 380px) {
   pre[class*="language-"] {
     width: 330px;
   }
 }
 
-@@media (min-wdith: 350px) {
+@@media (max-wdith: 350px) {
+  code[class*="language-"] {
+    width: 260px;
+  }
+
   pre[class*="language-"] {
     width: 260px;
   }
