@@ -3,7 +3,7 @@
  *
  * @author Gustavo Costa
  * e-mail: gusbemacbe@gmail.com
- * @license MIT 2016
+ * @license MIT 2016-2018
  */
 
 pre[class*="language-"] {
@@ -37,7 +37,7 @@ pre[class*="language-"] {
 
 @media screen and (max-width: 1024px) {
   pre[class*="language-"] {
-    width: 1500px;
+    width: 960px;
   }
 }
 
