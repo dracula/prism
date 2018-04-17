@@ -35,10 +35,11 @@ cd 'path/to/your_project'
 git clone https://github.com/gusbemacbe/draucla-prism.git
 ```
 
-#### Add two files
+#### Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts
 
 ```html
 <!-- Put this in the head -->
+<link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
 <link rel="stylesheet" href="css/dracula-prism.css">
 
 <!-- Put them in the end of the file -->
