@@ -60,7 +60,7 @@ git clone https://github.com/gusbemacbe/draucla-prism.git
 </script>
 ```
 
-### Add a code by, finishwing with `language-xxx`. Check the @LeaVerou's site about of supported languages: http://prismjs.com/#languages-list.
+### Add a code by, finishing with `language-xxx`. Check the @LeaVerou's site about of supported languages: http://prismjs.com/#languages-list.
 
 ```html
 <pre>
