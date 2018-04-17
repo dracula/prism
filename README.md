@@ -35,11 +35,18 @@ cd 'path/to/your_project'
 git clone https://github.com/gusbemacbe/draucla-prism.git
 ```
 
-If you prefer download only two files, you can run these commands:
+If you prefer downloading only two files, you can run these commands:
 
 ```shell
 svn export https://github.com/gusbemacbe/draucla-prism/trunk/css/dracula-prism.css
 svn export https://github.com/gusbemacbe/draucla-prism/trunk/js/prism.js
+```
+
+If you want to download only these two files to relative paths of your website project the which you did `cd`, you can run quickly:
+
+```shell
+svn export https://github.com/gusbemacbe/draucla-prism/trunk/css/dracula-prism.css 'css/'
+svn export https://github.com/gusbemacbe/draucla-prism/trunk/js/prism.js 'javascript/'
 ```
 
 #### Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts. The jQuery isn't required.
