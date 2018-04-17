@@ -28,6 +28,85 @@
       
       <p>This theme <samp>code</samp> or <samp>pre</samp> body is using a new font called PT Mono from Google Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
 
+      <p>You can check the install instructions and demo of codes using Prism.js and Dracula theme.</p>
+
+      <h3>Install</h3>
+
+  <p>Make <samp>cd</samp> to your website project:</p>
+
+  <pre style="height: auto;">
+    <code class="language-bash">
+      cd 'path/to/your_project'
+    </code>
+  </pre>
+
+  <p>Download</p>
+
+  <pre style="height: auto;">
+    <code class="language-bash">
+      git clone https://github.com/gusbemacbe/dracula-prism.git
+    </code>
+  </pre>
+
+  <p>If you prefer downloading only two files, you can run these commands:</p>
+
+  <pre style="height: auto;">
+    <code class="language-bash">
+      svn export https://github.com/gusbemacbe/dracula-prism/trunk/css/dracula-prism.css
+      svn export https://github.com/gusbemacbe/dracula-prism/trunk/js/prism.js
+    </code>
+  </pre>
+
+  <p>If you want to download only these two files to relative paths of your website project the which you did <samp>cd</samp>, you can run quickly:</p>
+
+  <pre style="height: auto;">
+    <code class="language-bash">
+      svn export https://github.com/gusbemacbe/dracula-prism/trunk/css/dracula-prism.css 'css/'
+      svn export https://github.com/gusbemacbe/dracula-prism/trunk/js/prism.js 'javascript/'
+    </code>
+  </pre>
+
+  <p>Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts. The jQuery isn't required.</p>
+
+  <pre style="height: auto;">
+    <code class="language-html">
+      &lt;!-- Put this in the head -->
+      &lt;link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
+      &lt;link rel="stylesheet" href="css/dracula-prism.css">
+
+      <!-- Put them in the end of the file -->
+      &lt;script src="js/prism.js"></script>
+      &lt;script type="text/javascript">
+        Prism.plugins.NormalizeWhitespace.setDefaults(
+          {
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true,
+            // 'break-lines': 10,
+            // 'indent': 2,
+            // 'remove-initial-line-feed': false,
+            // 'tabs-to-spaces': 4,
+            // 'spaces-to-tabs': 4
+          });
+      &lt;/script>
+    </code>
+  </pre>
+
+  <p>Finally, add a code by, finishing with <samp>language-xxx</samp>. Check the <a href="https://github.com/LeaVerou">Lea Verou</a>’s site about of supported languages: http://prismjs.com/#languages-list.</p>
+
+  <pre style="height: auto;">
+    <code class="language-html">
+      &lt;pre>
+        &lt;code class="language-xxx line-numbers">
+        your codes
+        &lt;/code>
+      &lt;/pre>
+    </code>
+  </pre>
+
+      <h3 id="demo">Demo</h3>
+
       <h3>CSS, HTML and Javascript Mixed Codes</h3>
 
 <pre><code class="language-markup line-numbers">&lt;!DOCTYPE html>
