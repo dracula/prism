@@ -35,7 +35,7 @@ cd 'path/to/your_project'
 git clone https://github.com/gusbemacbe/draucla-prism.git
 ```
 
-#### Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts
+#### Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts. The jQuery isn't required.
 
 ```html
 <!-- Put this in the head -->
@@ -43,7 +43,6 @@ git clone https://github.com/gusbemacbe/draucla-prism.git
 <link rel="stylesheet" href="css/dracula-prism.css">
 
 <!-- Put them in the end of the file -->
-<script src="js/jquery.js"></script>
 <script src="js/prism.js"></script>
 <script type="text/javascript">
   Prism.plugins.NormalizeWhitespace.setDefaults(
@@ -61,7 +60,7 @@ git clone https://github.com/gusbemacbe/draucla-prism.git
 </script>
 ```
 
-### Add a code by, finishing with `language-xxx`. Check the [@LeaVerou](https://github.com/LeaVerou)'s site about of supported languages: http://prismjs.com/#languages-list.
+### Add a code by, finishing with `language-xxx`. Check the [@LeaVerou](https://github.com/LeaVerou)’s site about of supported languages: http://prismjs.com/#languages-list.
 
 ```html
 <pre>
@@ -69,3 +68,4 @@ git clone https://github.com/gusbemacbe/draucla-prism.git
   your codes
   </code>
 </pre>
+```
