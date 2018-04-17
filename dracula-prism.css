@@ -37,7 +37,7 @@ pre[class*="language-"] {
 
 @media screen and (max-width: 1024px) {
   pre[class*="language-"] {
-    width: 960px;
+    width: 800px;
   }
 }
 
