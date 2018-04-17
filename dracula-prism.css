@@ -29,13 +29,7 @@ pre[class*="language-"] {
   }
 }
 
-@media (min-width: 1600px) {
-  pre[class*="language-"] {
-    width: 1500px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   pre[class*="language-"] {
     width: 800px;
   }
