@@ -19,7 +19,7 @@ This theme was built at Prism Theme builder, developed by Sandras Hklyaeva.
 This theme code or pre body is using a new font called PT Mono from Google Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.
 
 You can test the demo:
-https://gusbemacbe.github.io/draucla-prism/ 
+https://gusbemacbe.github.io/dracula-prism/ 
 
 ### Install
 
@@ -32,21 +32,21 @@ cd 'path/to/your_project'
 #### Download
 
 ```shell
-git clone https://github.com/gusbemacbe/draucla-prism.git
+git clone https://github.com/gusbemacbe/dracula-prism.git
 ```
 
 If you prefer downloading only two files, you can run these commands:
 
 ```shell
-svn export https://github.com/gusbemacbe/draucla-prism/trunk/css/dracula-prism.css
-svn export https://github.com/gusbemacbe/draucla-prism/trunk/js/prism.js
+svn export https://github.com/gusbemacbe/dracula-prism/trunk/css/dracula-prism.css
+svn export https://github.com/gusbemacbe/dracula-prism/trunk/js/prism.js
 ```
 
 If you want to download only these two files to relative paths of your website project the which you did `cd`, you can run quickly:
 
 ```shell
-svn export https://github.com/gusbemacbe/draucla-prism/trunk/css/dracula-prism.css 'css/'
-svn export https://github.com/gusbemacbe/draucla-prism/trunk/js/prism.js 'javascript/'
+svn export https://github.com/gusbemacbe/dracula-prism/trunk/css/dracula-prism.css 'css/'
+svn export https://github.com/gusbemacbe/dracula-prism/trunk/js/prism.js 'javascript/'
 ```
 
 #### Add two files and PT Mono of Google Webfonts link and do not forget of adding `.htaccess` for allowing the WOFF fonts. The jQuery isn't required.
