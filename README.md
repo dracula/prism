@@ -6,7 +6,7 @@
 
 ## Install
 
-All instructions can be found [here](https://gusbemacbe.github.io/dracula-prism).
+All instructions can be found [here](https://draculatheme.com/prism/).
 
 ## Team
 
