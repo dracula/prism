@@ -1,1002 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to the Dracula Theme for Prism.js!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono|Source+Sans+Pro:400,900|Suez+One&amp;subset=cyrillic,cyrillic-ext,hebrew,latin-ext,vietnamese" >
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="dracula-prism.css">
-    <link rel="stylesheet" href="font-awesome.min.css">
-    <script type="text/javascript" src="prism.js"></script>
-    <style>
-    a
-    {
-      color: #ffb86c;
-      text-decoration: none;
-    }
-
-    a.azul
-    {
-      color: #66d9ef;
-      text-decoration: none;
-    }
-
-    a:hover
-    {
-      color: #E6DB74;
-      text-decoration: none;
-      position: relative;
-    }
-
-    a:[title]:hover:after
-    {
-      content: attr(title);
-      font-family: Source Sans Pro, sans-serif;
-      font-size: 15px;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      white-space: nowrap;
-      z-index: 20;
-    }
-
-    body
-    {
-      background: #3c4556;
-      color: #fff;
-      font-family: Source Sans Pro, sans-serif;
-      font-size: 50px;
-    }
-
-    img[dracula]
-    {
-      /*height: auto;
-      width:100%;*/
-      height: 20%;
-      width: 20%;
-      margin-top: 50px;
-    }
-
-   @media screen and (max-width: 600px)
-      {
-        img[dracula]
-        {
-          height: auto;
-          width:100%;
-          margin-top: 50px;
-        }
-      }
-
-    p
-    {
-      font-size: 30px;
-      line-height: 1.6em;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    @media screen and (min-width: 1700px) {
-      p
-      {
-        font-size: 50px;
-      }
-
-    }
-
-    p.autoria
-    {
-      font-size: 20px;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    p.texto
-    {
-      font-size: 20px;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 30px;
-      text-align: justify;
-    }
-
-    @media screen and (min-width: 1700px)
-    {
-      p.texto
-      {
-        font-size: 30px;
-      }
-    }
-
-    span.ptmono
-    {
-      background-color: #858fa6;
-      border-radius: 5px;
-      font-family: PT Mono, sans-serif;
-      padding: 3px;
-    }
-
-    span.ptmono::selection
-    {
-      background-color: #ff79c6;
-      border-radius: 5px;
-    }
-
-    span.ptmono::selector
-    {
-      background-color: #ff79c6;
-      border-radius: 5px;
-    }
-
-    .titulo
-    {
-      color: #50fa7b;
-      font-family: Suez One, serif;
-      margin-top: 20px;
-    }
-
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/dracula.css">
+    <link rel="stylesheet" href="css/dracula-prism.css">
   </head>
+
   <body>
-    <center>
-      <img dracula="true" src="Vampiro Geek.svg" />
-    </center>
-    <center>
-      <div class="titulo">
+
+      <img alt="Geek vampire" dracula="true" src="Vampiro Geek.svg">
+
+      <h1 class="titulo">
         Dracula Theme for Prism.js
-      </div>
-    </center>
-
-    <p>Is Dracula theme for Prism.js missed? Don't worry! The geek and nerdy king Dracula has just built the theme for Prism.js with his MacBook full of funny stickers!</p>
-    <p class="texto">This theme was built at <a href="http://sandrashklyaeva.github.io/prism-theme-builder/">Prism Theme builder</a>, developed by Sandras Hklyaeva.
-    <br>This theme <code>code</code> or <code>pre</code> body is using a new font called <span class="ptmono">PT Mono</span> from <img height="25px" src="google2015.svg" /> Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
-    <p class="texto">Observe that this theme is still in beta development, because I'm fixing the problems of <code>media</code> queries and <code>pre</code>’s <code>width</code>.</p>
-    <p><b>CSS Code</b></p>
-    <pre>
-      <code class="language-css line-numbers">
-      @import url(http://fonts.googleapis.com/css?family=Questrial);
-      @import url(http://fonts.googleapis.com/css?family=Arvo);
-
-      @font-face {
-      	src: url(http://lea.verou.me/logo.otf);
-      	font-family: 'LeaVerou';
-      }
-
-      /*
-       Shared styles
-       */
-
-      section h1,
-      #features li strong,
-      header h2,
-      footer p {
-      	font: 100% Rockwell, Arvo, serif;
-      }
-
-      /*
-       Styles
-       */
-
-      * {
-      	margin: 0;
-      	padding: 0;
-      	font-weight: normal;
-      }
-
-      body {
-      	font: 100%/1.5 Questrial, sans-serif;
-      	tab-size: 4;
-      	hyphens: auto;
-      }
-
-      a {
-      	color: inherit;
-      }
-
-      section h1 {
-      	font-size: 250%;
-      }
-
-      	section section h1 {
-      		font-size: 150%;
-      	}
-
-      	section h1 code {
-      		font-style: normal;
-      	}
-
-      	section h1 > a {
-      		text-decoration: none;
-      	}
-
-      	section h1 > a:before {
-      		content: '§';
-      		position: absolute;
-      		padding: 0 .2em;
-      		margin-left: -1em;
-      		border-radius: .2em;
-      		color: silver;
-      		text-shadow: 0 1px white;
-      	}
-
-      	section h1 > a:hover:before {
-      		color: black;
-      		background: #f1ad26;
-      	}
-
-      p {
-      	margin: 1em 0;
-      }
-
-      section h1,
-      h2 {
-      	margin: 1em 0 .3em;
-      }
-
-      dt {
-      	margin: 1em 0 0 0;
-      	font-size: 130%;
-      }
-
-      	dt:after {
-      		content: ':';
-      	}
-
-      dd {
-      	margin-left: 2em;
-      }
-
-      strong {
-      	font-weight: bold;
-      }
-
-      code, pre {
-      	font-family: Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
-      	hyphens: none;
-      }
-
-      pre {
-      	max-height: 30em;
-      	overflow: auto;
-      }
-
-      pre > code.highlight {
-      	outline: .4em solid red;
-      	outline-offset: .4em;
-      }
-
-      header,
-      body > section {
-      	display: block;
-      	max-width: 900px;
-      	margin: auto;
-      }
-
-      header, footer {
-      	position: relative;
-      	padding: 30px -webkit-calc(50% - 450px); /* Workaround for bug */
-      	padding: 30px calc(50% - 450px);
-      	color: white;
-      	text-shadow: 0 -1px 2px black;
-      	background: url(img/spectrum.png) fixed;
-      }
-
-      header:before,
-      footer:before {
-      	content: '';
-      	position: absolute;
-      	bottom: 0; left: 0; right: 0;
-      	height: 20px;
-      	background-size: 20px 40px;
-      	background-repeat: repeat-x;
-      	background-image: linear-gradient(45deg, transparent 34%, white 34%, white 66%, transparent 66%),
-      	                  linear-gradient(135deg, transparent 34%, white 34%, white 66%, transparent 66%);
-      }
-
-      header {
-
-      }
-
-      	header .intro,
-      	html.simple header {
-      		overflow: hidden;
-      	}
-
-      	header h1 {
-      		float: left;
-      		margin-right: 30px;
-      		color: #7fab14;
-      		text-align: center;
-      		font-size: 140%;
-      		text-transform: uppercase;
-      		letter-spacing: .25em;
-      	}
-
-      	header h2 {
-      		margin-top: .5em;
-      		color: #f1ad26;
-      	}
-
-      		header h1 a {
-      			text-decoration: none;
-      		}
-
-      		header img {
-      			display: block;
-      			width: 150px;
-      			height: 128px;
-      			margin-bottom: .3em;
-      			border: 0;
-      		}
-
-      	header h2 {
-      		font-size: 300%;
-      	}
-
-      	header .intro p {
-      		margin: 0;
-      		font: 150%/1.4 Questrial, sans-serif;
-      		font-size: 150%;
-      	}
-
-      	#features {
-      		width: 66em;
-      		margin-top: 2em;
-      		font-size: 80%;
-      	}
-
-      		#features li {
-      			margin: 0 0 2em 0;
-      			list-style: none;
-      			display: inline-block;
-      			width: 27em;
-      			vertical-align: top;
-      		}
-
-      		#features li:nth-child(odd) {
-      			margin-right: 5em;
-      		}
-
-      			#features li:before {
-      				content: '✓';
-      				float: left;
-      				margin-left: -.8em;
-      				color: #7fab14;
-      				font-size: 400%;
-      				line-height: 1;
-      			}
-
-      				#features li strong {
-      					display: block;
-      					margin-bottom: .1em;
-      					font-size: 200%;
-      				}
-
-      	header .download-button {
-      		float: right;
-      		margin: 0 0 .5em .5em;
-      	}
-
-      	#theme {
-      		position: relative;
-      		z-index: 1;
-      		float: right;
-      		margin-right: -1em;
-      		text-align: center;
-      		text-transform: uppercase;
-      		letter-spacing: .2em;
-      	}
-
-      		#theme > p {
-      			position: absolute;
-      			left: 100%;
-      			transform: translateX(50%) rotate(90deg) ;
-      			transform-origin: top left;
-      			font-size: 130%;
-      		}
-
-      		#theme > label {
-      			position: relative;
-      			display: block;
-      			width: 7em;
-      			line-height: 1em;
-      			padding: 3em 0;
-      			border-radius: 50%;
-      			background: hsla(0,0%,100%,.5);
-      			cursor: pointer;
-      			font-size: 110%;
-      		}
-
-      		#theme > label:before {
-      			content: '';
-      			position: absolute;
-      			top: 0; right: 0; bottom: 0; left: 0;
-      			z-index: -1;
-      			border-radius: inherit;
-      			background: url(img/spectrum.png) fixed;
-      		}
-
-      		#theme > label:nth-of-type(n+2) {
-      			margin-top: -2.5em;
-      		}
-
-      		#theme > input:not(:checked) + label:hover {
-      			background: hsla(77, 80%, 60%, .5);
-      		}
-
-      		#theme > input {
-      			position: absolute;
-      			clip: rect(0,0,0,0);
-      		}
-
-      		#theme > input:checked + label {
-      			background: #7fab14;
-      		}
-
-      footer {
-      	margin-top: 2em;
-      	background-position: bottom;
-      	color: white;
-      	text-shadow: 0 -1px 2px black;
-      }
-
-      	footer:before {
-      		bottom: auto;
-      		top: 0;
-      		background-position: bottom;
-      	}
-
-      	footer p {
-      		font-size: 150%;
-      	}
-
-      	footer ul {
-      		column-count: 3;
-      	}
-
-      .download-button {
-      	display: block;
-      	padding: .2em .8em .1em;
-      	border: 1px solid rgba(0,0,0,0.5);
-      	border-radius: 10px;
-      	background: #39a1cf;
-      	box-shadow: 0 2px 10px black,
-      	   inset 0 1px hsla(0,0%,100%,.3),
-      	   inset 0 .4em hsla(0,0%,100%,.2),
-      	   inset 0 10px 20px hsla(0,0%,100%,.25),
-      	   inset 0 -15px 30px rgba(0,0,0,0.3);
-      	color: white;
-      	text-shadow: 0 -1px 2px black;
-      	text-align: center;
-      	font-size: 250%;
-      	line-height: 1.5;
-      	text-transform: uppercase;
-      	text-decoration: none;
-      	hyphens: manual;
-      }
-
-      .download-button:hover {
-      	background-color: #7fab14;
-      }
-
-      .download-button:active {
-      	box-shadow: inset 0 2px 8px rgba(0,0,0,.8);
-      }
-
-      #toc {
-      	position: fixed;
-      	left: 1%;
-      	max-width: calc(48% - 450px);
-      	font-size: 80%;
-      	opacity: .3;
-      }
-
-      @media (max-width: 1200px) {
-      	#toc {
-      		 display: none;
-      	}
-      }
-
-      #toc:hover {
-      	opacity: 1;
-      }
-
-      	#toc h1 {
-      		font-size: 180%;
-      	}
-
-      	#toc li {
-      		list-style: none;
-      	}
-
-      #logo:before {
-      	content: '☠';
-      	float: right;
-      	font: 100px/1.6 LeaVerou;
-      }
-
-      .used-by-logos {
-      	overflow: hidden;
-      }
-      	.used-by-logos > a {
-      		float: left;
-      		width: 33.33%;
-      		height: 100px;
-      		text-align: center;
-      		background: #F5F2F0;
-      		box-sizing: border-box;
-      		border: 5px solid white;
-      		position: relative;
-      	}
-      		.used-by-logos > .uswds {
-      			background: url('img/screen-us-web-design-standards.png') no-repeat 0 0;
-      			background-size: cover;
-      			text-indent: -999em;
-      		}
-      		.used-by-logos > a > img {
-      			max-height: 100%;
-      			max-width: 100%;
-      			position: absolute;
-      			top: 50%;
-      			left: 50%;
-      			transform: translate(-50%, -50%);
-      		}
-
-      label a.owner {
-      	margin: 0 .5em;
-      }
-
-      label a.owner:not(:hover) {
-      	text-decoration: none;
-      	color: #aaa;
-      }
-
-      #languages-list ul {
-      	column-count: 3;
-      }
-      	#languages-list li {
-      		padding: .2em;
-      	}
-      	#languages-list li[data-id="javascript"] {
-      		border-bottom: 1px solid #aaa;
-      		padding-bottom: 1em;
-      		margin-bottom: 1em;
-      		margin-right: 1em;
-      	}
-      </code>
-    </pre>
-
-    <p><b>CSS, HTML and Javascript Mixed Codes</b></p>
-    <pre>
-      <code class="language-markup line-numbers">
-        <!DOCTYPE html>
-        &lt;html lang="en">
-        &lt;head>
-        	&lt;meta charset="utf-8" />
-        	&lt;title>I can haz embedded CSS and JS</title>
-        	&lt;style>
-        	 @media print {
-        			p { color: red !important; }
-        		}
-        	&lt;/style>
-        &lt;/head>
-        &lt;body>
-        	&lt;h1>I can haz embedded CSS and JS</h1>
-        	&lt;script>
-        	if (true) {
-        		console.log('foo');
-        	}
-        	&lt;/script>
-
-        &lt;/body>
-        &lt;/html>
-      </code>
-    </pre>
-
-    <p><b>C-Like Codes</b></p>
-    <pre>
-      <code class="language-clike line-numbers">
-        // Single line comment
-        /* Multi-line
-        comment */
-
-        "foo \"bar\" baz";
-        'foo \'bar\' baz';
-
-        123
-        123.456
-        -123.456
-        1e-23
-        123.456E789
-        0xaf
-        0xAF
-
-        foo();
-        Bar();
-        _456();
-
-        "foo &#47;&#42; bar */ baz"; "foo // bar";
-      </code>
-    </pre>
-
-    <p><b>JavaScript Codes</b></p>
-    <pre>
-      <code class="language-clike line-numbers">
-        // Variable assignment
-        var foo = "bar", baz = 5;
-
-        // Operators
-        (1 + 2 * 3)/4 >= 3 && 4 < 5 || 6 > 7
-
-        // Indented code
-        if (true) {
-          	while (true) {
-          		doSomething();
-          	}
-          }
-
-        // Regex with slashes
-        var foo = /([^/])\/(\\?.|\[.+?])+?\/[gim]{0,3}/g;
-
-        Strings with slashes
-        env.content + '</' + env.tag + '>'
-        var foo = "/" + "/";
-        var foo = "http://prismjs.com"; // Strings are strings and comments are comments ;)
-      </code>
-    </pre>
-
-    <p><b>C Language Codes</b></p>
-    <pre>
-      <code class="language-c line-numbers">
-        "foo \"bar\" baz"
-        'foo \'bar\' baz'
-        "Multi-line strings ending with a \
-        are supported too."
-
-        # include &lt;stdio.h>
-        #define PG_locked   0
-        #define PG_error    1
-
-        #include &lt;stdio.h>
-        main(int argc, char *argv[])
-        {
-           int c;
-           printf("Number of command line arguments passed: %d\n", argc);
-           for ( c = 0 ; c < argc ; c++)
-              printf("%d. Command line argument passed is %s\n", c+1, argv[c]);
-           return 0;
+      </h1>
+
+      <h2>Is Dracula theme for Prism.js missed? Don't worry! The geek and nerdy king Dracula has just built the theme for Prism.js
+        with his MacBook full of funny stickers!</h2>
+        
+      <p class="texto">This theme was built at <a href="http://sandrashklyaeva.github.io/prism-theme-builder/">Prism Theme builder</a>, developed by Sandras Hklyaeva.</p>
+      
+      <p>This theme <samp>code</samp> or <samp>pre</samp> body is using a new font called PT Mono from Google Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
+
+      <h3>CSS, HTML and Javascript Mixed Codes</h3>
+
+<pre><code class="language-markup line-numbers">&lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+      &lt;meta charset="utf-8" />
+      &lt;title>I can haz embedded CSS and JS</title>
+      &lt;style>
+        @media print {
+          p { color: red !important; }
         }
-      </code>
-    </pre>
+      &lt;/style>
+    &lt;/head>
+    &lt;body>
+      &lt;h1>I can haz embedded CSS and JS</h1>
+      &lt;script>
+      if (true) {
+        console.log('foo');
+      }
+      &lt;/script>
 
-    <p><b>C++ Language Codes</b></p>
-    <pre>
-      <code class="language-c line-numbers">
-        /*
-        David Cary 2010-09-14
-        quick demo for wikibooks
-        public domain
-        */
+    &lt;/body>
+    &lt;/html>
+  </code>
+</pre>
 
-        #include &lt;iostream>
-        #include &lt;vector>
-        using namespace std;
+<h3>C-Like Codes</h3>
 
-        vector&lt;int> pick_vector_with_biggest_fifth_element(
-            vector&lt;int> left,
-            vector&lt;int> right
-        ){
-            if( (left[5]) < (right[5]) ){
-                return( right );
-            };
-            // else
-            return( left );
+<pre>
+  <code class="language-clike line-numbers">
+    // Single line comment
+    /* Multi-line
+    comment */
+
+    "foo \"bar\" baz";
+    'foo \'bar\' baz';
+
+    123
+    123.456
+    -123.456
+    1e-23
+    123.456E789
+    0xaf
+    0xAF
+
+    foo();
+    Bar();
+    _456();
+
+    "foo &#47;&#42; bar */ baz"; "foo // bar";
+  </code>
+</pre>
+
+<h3>JavaScript Codes</h3>
+
+<pre>
+  <code class="language-javascript line-numbers">
+    // Variable assignment
+    var foo = "bar", baz = 5;
+
+    // Operators
+    (1 + 2 * 3)/4 >= 3 && 4 < 5 || 6 > 7
+
+    // Indented code
+    if (true) {
+        while (true) {
+          doSomething();
         }
+      }
 
-        int vector_demo(void){
-            cout << "vector demo" << endl;
-            vector&lt;int> left(7);
-            vector&lt;int> right(7);
+    // Regex with slashes
+    var foo = /([^/])\/(\\?.|\[.+?])+?\/[gim]{0,3}/g;
 
-            left[5] = 7;
-            right[5] = 8;
-            cout << left[5] << endl;
-            cout << right[5] << endl;
-            vector&lt;int> biggest(
-                pick_vector_with_biggest_fifth_element( left, right )
-            );
-            cout << biggest[5] << endl;
+    Strings with slashes
+    env.content + '</' + env.tag + '>'
+    var foo = "/" + "/";
+    var foo = "http://prismjs.com"; // Strings are strings and comments are comments ;)
+  </code>
+</pre>
 
-            return 0;
-        }
+<h3>C++ Language Codes</h3>
+<pre>
+  <code class="language-c line-numbers">
+    /*
+    David Cary 2010-09-14
+    quick demo for wikibooks
+    public domain
+    */
 
-        int main(void){
-            vector_demo();
-        }
-      </code>
-    </pre>
+    #include &lt;iostream>
+    #include &lt;vector>
+    using namespace std;
 
-    <p><b>Java Language Codes</b></p>
-    <pre>
-      <code class="language-java line-numbers">
-        import java.util.Scanner;
+    vector&lt;int> pick_vector_with_biggest_fifth_element(
+        vector&lt;int> left,
+        vector&lt;int> right
+    ){
+        if( (left[5]) < (right[5]) ){
+            return( right );
+        };
+        // else
+        return( left );
+    }
 
-        public class Life {
+    int vector_demo(void){
+        cout << "vector demo" << endl;
+        vector&lt;int> left(7);
+        vector&lt;int> right(7);
 
-            @Override @Bind("One")
-            public void show(boolean[][] grid){
-                String s = "";
-                for(boolean[] row : grid){
-                    for(boolean val : row)
-                        if(val)
-                            s += "*";
-                        else
-                            s += ".";
-                    s += "\n";
-                }
-                System.out.println(s);
+        left[5] = 7;
+        right[5] = 8;
+        cout << left[5] << endl;
+        cout << right[5] << endl;
+        vector&lt;int> biggest(
+            pick_vector_with_biggest_fifth_element( left, right )
+        );
+        cout << biggest[5] << endl;
+
+        return 0;
+    }
+
+    int main(void){
+        vector_demo();
+    }
+  </code>
+</pre>
+
+<h3>Java Language Codes</h3>
+<pre>
+  <code class="language-java line-numbers">
+    import java.util.Scanner;
+
+    public class Life {
+
+        @Override @Bind("One")
+        public void show(boolean[][] grid){
+            String s = "";
+            for(boolean[] row : grid){
+                for(boolean val : row)
+                    if(val)
+                        s += "*";
+                    else
+                        s += ".";
+                s += "\n";
             }
+            System.out.println(s);
+        }
 
-            public static boolean[][] gen(){
-                boolean[][] grid = new boolean[10][10];
-                for(int r = 0; r < 10; r++)
-                    for(int c = 0; c < 10; c++)
-                        if( Math.random() > 0.7 )
-                            grid[r][c] = true;
-                return grid;
-            }
+        public static boolean[][] gen(){
+            boolean[][] grid = new boolean[10][10];
+            for(int r = 0; r < 10; r++)
+                for(int c = 0; c < 10; c++)
+                    if( Math.random() > 0.7 )
+                        grid[r][c] = true;
+            return grid;
+        }
 
-            public static void main(String[] args){
-                boolean[][] world = gen();
-                show(world);
+        public static void main(String[] args){
+            boolean[][] world = gen();
+            show(world);
+            System.out.println();
+            world = nextGen(world);
+            show(world);
+            Scanner s = new Scanner(System.in);
+            while(s.nextLine().length() == 0){
                 System.out.println();
                 world = nextGen(world);
                 show(world);
-                Scanner s = new Scanner(System.in);
-                while(s.nextLine().length() == 0){
-                    System.out.println();
-                    world = nextGen(world);
-                    show(world);
 
-                }
-            }
-
-        	// [...]
-        }
-      </code>
-    </pre>
-
-    <p><b>Objective-C Codes</b></p>
-    <pre>
-      <code class="language-objectivec line-numbers">
-        #import &lt;UIKit/UIKit.h>
-        #import "Dependency.h"
-
-        @protocol WorldDataSource
-        @optional
-        - (NSString*)worldName;
-        @required
-        - (BOOL)allowsToLive;
-        @end
-
-        @interface Test : NSObject &lt;HelloDelegate, WorldDataSource> {
-          NSString *_greeting;
-        }
-
-        @property (nonatomic, readonly) NSString *greeting;
-        - (IBAction) show;
-        @end
-
-        @implementation Test
-
-        @synthesize test=_test;
-
-        + (id) test {
-          return [self testWithGreeting:@"Hello, world!\nFoo bar!"];
-        }
-
-        + (id) testWithGreeting:(NSString*)greeting {
-          return [[[self alloc] initWithGreeting:greeting] autorelease];
-        }
-
-        - (id) initWithGreeting:(NSString*)greeting {
-          if ( (self = [super init]) ) {
-            _greeting = [greeting retain];
-          }
-          return self;
-        }
-
-        - (void) dealloc {
-          [_greeting release];
-          [super dealloc];
-        }
-
-        @end
-      </code>
-    </pre>
-
-    <p><b>PHP Codes</b></p>
-    <pre>
-      <code class="language-php line-numbers">
-        // ***** Comments ***** //
-
-        // Single line comment
-        /* Multi-line
-        comment */
-        # Shell-like comment
-
-        // ***** Strings ***** //
-
-        'foo \'bar\' baz'
-        "foo \"bar\" baz"
-        "a string # containing an hash"
-
-        // ***** Variables ***** //
-
-        $some_var = 5;
-        $otherVar = "Some text";
-        $null = null;
-        $false = false;
-
-        // ***** Functions ***** //
-
-        $json = json_encode($my_object);
-        $array1 = array("a" => "green", "red", "blue", "red");
-        $array2 = array("b" => "green", "yellow", "red");
-        $result = array_diff($array1, $array2);
-
-        // ***** Constants ***** //
-
-        define('MAXSIZE', 42);
-        echo MAXSIZE;
-        json_decode($json, false, 512, JSON_BIGINT_AS_STRING)
-
-        // *****
-        PHP 5.3+ support ***** //
-
-        namespace my\name;
-        $c = new \my\name\MyClass;
-        $arr = [1,2,3];
-        trait ezcReflectionReturnInfo {
-            function getReturnType() { /*1*/ }
-            function getReturnDescription() { /*2*/ }
-        }
-        function gen_one_to_three() {
-            for ($i = 1; $i <= 3; $i++) {
-                // Note that $i is preserved between yields.
-                yield $i;
             }
         }
 
-        // ***** PHP embedded in HTML ***** //
+      // [...]
+    }
+  </code>
+</pre>
 
-        &lt;div class="<?php echo $a ? 'foo' : 'bar'; ?>">
-        <?php if($var < 42) {
-            echo "Something";
-        } else {
-            echo "Something else";
-        } ?>
-        &lt;/div>
+<h3>Go</h3>
+
+<pre>
+  <code class="language-go line-numbers">
+    package main
+
+    import "fmt"
+
+    func main() 
+    {
+        ch := make(chan float64)
+        ch <- 1.0e10    // magic number
+        x, ok := <- ch
+        defer fmt.Println(`exitting now\`)
+        go println(len("hello world!"))
+        return
+    }
+  </code>
+</pre>
+
+<h3>PHP</h3>
+
+<pre>
+  <code class="language-php line-numbers">
+    // ***** Comments ***** //
+
+    // Single line comment
+    /* Multi-line
+    comment */
+    # Shell-like comment
+
+    // ***** Strings ***** //
+
+    'foo \'bar\' baz'
+    "foo \"bar\" baz"
+    "a string # containing an hash"
+
+    // ***** Variables ***** //
+
+    $some_var = 5;
+    $otherVar = "Some text";
+    $null = null;
+    $false = false;
+
+    // ***** Functions ***** //
+
+    $json = json_encode($my_object);
+    $array1 = array("a" => "green", "red", "blue", "red");
+    $array2 = array("b" => "green", "yellow", "red");
+    $result = array_diff($array1, $array2);
+
+    // ***** Constants ***** //
+
+    define('MAXSIZE', 42);
+    echo MAXSIZE;
+    json_decode($json, false, 512, JSON_BIGINT_AS_STRING)
+
+    // *****
+    PHP 5.3+ support ***** //
+
+    namespace my\name;
+    $c = new \my\name\MyClass;
+    $arr = [1,2,3];
+    trait ezcReflectionReturnInfo {
+        function getReturnType() { /*1*/ }
+        function getReturnDescription() { /*2*/ }
+    }
+    function gen_one_to_three() {
+        for ($i = 1; $i <= 3; $i++) {
+            // Note that $i is preserved between yields.
+            yield $i;
+        }
+    }
+
+    // ***** PHP embedded in HTML ***** //
+
+    &lt;div class="<?php echo $a ? 'foo' : 'bar'; ?>">
+    <?php if($var < 42) {
+        echo "Something";
+    } else {
+        echo "Something else";
+    } ?>
+    &lt;/div>
+  </code>
+</pre>
+
+<h3>Python</h3>
+
+<pre>
+  <code class="language-python line-numbers">
+    def median(pool):
+    '''Statistical median to demonstrate doctest.
+    >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
+    7
+    '''
+    copy = sorted(pool)
+    size = len(copy)
+    if size % 2 == 1:
+        return copy[(size - 1) / 2]
+    else:
+        return (copy[size/2 - 1] + copy[size/2]) / 2
+    if __name__ == '__main__':
+        import doctest
+        doctest.testmod()
       </code>
-    </pre>
+  </pre>
 
-    <p><b>Python Codes</b></p>
-    <pre>
-      <code class="language-python line-numbers">
-        def median(pool):
-        '''Statistical median to demonstrate doctest.
-        >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
-        7
-        '''
-        copy = sorted(pool)
-        size = len(copy)
-        if size % 2 == 1:
-            return copy[(size - 1) / 2]
-        else:
-            return (copy[size/2 - 1] + copy[size/2]) / 2
-        if __name__ == '__main__':
-            import doctest
-            doctest.testmod()
-          </code>
-      </pre>
+<h3>Python</h3>
 
-      <p><b>Ruby Codes</b></p>
-      <pre>
-        <code class="language-ruby line-numbers">
-          #### Single-line comments ####
-          # This is a comment
+  <pre>
+    <code class="language-ruby line-numbers">
+      #### Single-line comments ####
+      # This is a comment
 
-          #### Strings ####
-          "foo \"bar\" baz"
-          'foo \'bar\' baz'
+      #### Strings ####
+      "foo \"bar\" baz"
+      'foo \'bar\' baz'
 
-          #### Regular expressions ####
-          /foo?[ ]*bar/
+      #### Regular expressions ####
+      /foo?[ ]*bar/
 
-          #### Variables ####
-          $foo = 5;
-          class InstTest
-            def set_foo(n)
-              @foo = n
-            end
-            def set_bar(n)
-              @bar = n
-            end
-          end
+      #### Variables ####
+      $foo = 5;
+      class InstTest
+        def set_foo(n)
+          @foo = n
+        end
+        def set_bar(n)
+          @bar = n
+        end
+      end
 
-          #### Symbols ####
-          mystring = :steveT;
+      #### Symbols ####
+      mystring = :steveT;
 
-          #### String Interpolation ####
-          "foo #{'bar'+my_variable}"
-        </code>
-      </pre>
+      #### String Interpolation ####
+      "foo #{'bar'+my_variable}"
+    </code>
+  </pre>
 
-      <p><b>SQL Codes</b></p>
-      <pre>
-        <code class="language-sql line-numbers">
-          ### Comments ###
-          # Single line comment
-          -- Single line comment
-          // Single line comment
-          /* Multi-line
-          comment */
+<h3>SQL</h3>
 
-          ### Strings ###
-          "foo \"bar\" baz"
-          'foo \'bar\' baz'
-          "Multi-line strings
-          are supported"
-          'Multi-line strings
-          are supported'
+  <pre>
+    <code class="language-sql line-numbers">
+      ### Comments ###
+      # Single line comment
+      -- Single line comment
+      // Single line comment
+      /* Multi-line
+      comment */
 
-          ### Variables ###
-          SET @variable = 1;
-          SET @$_ = 2;
-          SET @"quoted-variable" = 3;
-          SET @'quoted-variable' = 3;
-          SET @`quoted-variable` = 3;
+      ### Strings ###
+      "foo \"bar\" baz"
+      'foo \'bar\' baz'
+      "Multi-line strings
+      are supported"
+      'Multi-line strings
+      are supported'
 
-          ### Operators ###
-          SELECT 1 && 1;
-          SELECT 1 OR NULL;
-          SELECT 5 & 2*3;
-          SELECT 2 BETWEEN 1 AND 3;
+      ### Variables ###
+      SET @variable = 1;
+      SET @$_ = 2;
+      SET @"quoted-variable" = 3;
+      SET @'quoted-variable' = 3;
+      SET @`quoted-variable` = 3;
 
-          ### Functions and keywords ###
-          SELECT COUNT(*) AS cpt, MAX(t.pos) AS max_pos
-          FROM `my_table`
-          LEFT JOIN `other_table` AS t
-          WHERE `somecol` IS NOT NULL
-          ORDER BY t.other_col DESC
-        </code>
-      </pre>
-      <br />
+      ### Operators ###
+      SELECT 1 && 1;
+      SELECT 1 OR NULL;
+      SELECT 5 & 2*3;
+      SELECT 2 BETWEEN 1 AND 3;
 
-      <p class="autoria">
-      Made with <a href="http://atom.io"><img height="30px" src="atomlogo.svg" /></a> by <a class="azul" href="https://github.com/gusbemacbe">Gustavo Benedito Costa</a>
-      <br>on a <img width="40px" src="macmini.svg" title="Mac mini"> in <img height="30px "src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojNkRBNTQ0OyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGRkRBNDQ7IiBwb2ludHM9IjI1NiwxMDAuMTc0IDQ2Ny40NzgsMjU2IDI1Niw0MTEuODI2IDQ0LjUyMiwyNTYgIi8+CjxjaXJjbGUgc3R5bGU9ImZpbGw6I0YwRjBGMDsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9Ijg5LjA0MyIvPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiBkPSJNMjExLjQ3OCwyNTAuNDM1Yy0xNS40ODQsMC0zMC40MjcsMi4zNTUtNDQuNDkzLDYuNzI1YzAuNjIzLDQ4LjY0LDQwLjIyNyw4Ny44ODQsODkuMDE1LDg3Ljg4NCAgIGMzMC4xNjgsMCw1Ni44MTItMTUuMDE3LDcyLjkxOS0zNy45NjhDMzAxLjM2MiwyNzIuNTc5LDI1OC45NjEsMjUwLjQzNSwyMTEuNDc4LDI1MC40MzV6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojMDA1MkI0OyIgZD0iTTM0My4zOTMsMjczLjA2YzEuMDcyLTUuNTI0LDEuNjUxLTExLjIyMywxLjY1MS0xNy4wNmMwLTQ5LjE3OC0zOS44NjYtODkuMDQzLTg5LjA0My04OS4wNDMgICBjLTM2LjY5NCwwLTY4LjE5NCwyMi4yMDEtODEuODI2LDUzLjg5OWMxMi4wNS0yLjQ5NywyNC41MjYtMy44MTIsMzcuMzA1LTMuODEyQzI2My4xOTcsMjE3LjA0MywzMDkuOTgzLDIzOC41NDEsMzQzLjM5MywyNzMuMDZ6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
-      </p>
+      ### Functions and keywords ###
+      SELECT COUNT(*) AS cpt, MAX(t.pos) AS max_pos
+      FROM `my_table`
+      LEFT JOIN `other_table` AS t
+      WHERE `somecol` IS NOT NULL
+      ORDER BY t.other_col DESC
+    </code>
+  </pre>
 
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+  <h3>Swift</h3>
+
+  <pre>
+    <code class="language-swift line-numbers">
+      import Foundation
+
+      @objc class Person: Entity 
+      {
+        var name: String!
+        var age:  Int!
+
+        init(name: String, age: Int) 
+        {
+          /* /* ... */ */
+        }
+
+        // Return a descriptive string for this person
+        func description(offset: Int = 0) -> String {
+          return "\(name) is \(age + offset) years old"
+        }
+      }
+    </code>
+  </pre>
+
+    <p class="autoria">Made with the code editor VSCode Insiders by
+      <a class="azul" href="https://github.com/gusbemacbe">Gustavo Benedito Costa</a>
+      <br/>on a Mac mini with macOS 10.13 and a HP EliteBook with Ubuntu 16.04 and Windows 10 in Brazil.</p>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/prism.js"></script>
     <script type="text/javascript">
-    Prism.plugins.NormalizeWhitespace.setDefaults({
-  	'remove-trailing': true,
-  	'remove-indent': true,
-  	'left-trim': true,
-  	'right-trim': true,
-  	// 'break-lines': 10,
-  	// 'indent': 2,
-  	// 'remove-initial-line-feed': false,
-  	// 'tabs-to-spaces': 4,
-  	// 'spaces-to-tabs': 4
-    });
+      Prism.plugins.NormalizeWhitespace.setDefaults(
+        {
+          'remove-trailing': true,
+          'remove-indent': true,
+          'left-trim': true,
+          'right-trim': true,
+          // 'break-lines': 10,
+          // 'indent': 2,
+          // 'remove-initial-line-feed': false,
+          // 'tabs-to-spaces': 4,
+          // 'spaces-to-tabs': 4
+        });
     </script>
   </body>
 </html>
