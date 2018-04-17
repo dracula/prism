@@ -1,6 +1,8 @@
 # Dracula Theme for Prism.js
 
+<p align="center">
 <img alt="Vampiro Geek" src="images/vampiro-geek.svg" style="display: block; height: auto; margin: 0 auto; max-width: 100%; text-align: center;">
+</p>
 
 ### Now it is oficial!
 
