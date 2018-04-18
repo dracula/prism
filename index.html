@@ -5,59 +5,66 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to the Dracula Theme for Prism.js!</title>
+    <title>Dracula — A dark theme for Prism.js and 50+ apps</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/dracula.css">
     <link rel="stylesheet" href="css/dracula-prism.css">
+    <link rel="icon" type="image/x-icon" href="https://draculatheme.com/assets/img/favicon.ico">
   </head>
 
   <body>
 
-      <img alt="Geek vampire" dracula="true" src="images/vampiro-geek.svg">
+      <a href="https://draculatheme.com">
+        <img alt="Geek vampire" dracula="true" src="images/vampiro-geek.svg">
 
-      <h1 class="titulo">
-        Dracula Theme for Prism.js
-      </h1>
+        <h1 class="titulo">
+          Dracula
+        </h1>
+      </a>
 
-      <h2>Is Dracula theme for Prism.js missed? Don't worry! The geek and nerdy king Dracula has just built the theme for Prism.js
-        with his MacBook full of funny stickers!</h2>
-        
-      <p class="texto">This theme was built at <a href="http://sandrashklyaeva.github.io/prism-theme-builder/">Prism Theme builder</a>, developed by Sandras Hklyaeva.</p>
-      
-      <p>This theme <code class="language-bash">code</code> or <code class="language-bash">pre</code> body is using a new font called PT Mono from Google Fonts, an elegant monoscaped serif font, which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and it is optimised for mobile and bigger monitors.</p>
+      <h2>A dark theme for Prism.js <a href="https://draculatheme.com">and 50+ apps</a></h2>
 
-      <p>You can check the install instructions and demo of codes using Prism.js and Dracula theme.</p>
-
-      <h3>Install</h3>
-
-      <p>Make <code class="language-bash">cd</code> to your website project:</p>
+      <p class="gh-btns">
+        <iframe src="https://ghbtns.com/github-btn.html?user=dracula&amp;repo=dracula-theme&amp;type=watch&amp;count=true&amp;size=large"
+                allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30">
+        </iframe>
+        <iframe src="https://ghbtns.com/github-btn.html?user=dracula&amp;repo=dracula-theme&amp;type=fork&amp;count=true&amp;size=large"
+                allowtransparency="true" frameborder="0" scrolling="0" width="156" height="30">
+        </iframe>
+      </p>
 
       <pre>
-        <code class="language-bash">
-          cd 'path/to/your_project'
+        <code class="language-c line-numbers">
+          #include &lt;iostream>
+
+          int main()
+          {
+            std::cout &lt;&lt; "Hello, I'm a dark theme for Prism.js!" &lt;&lt; std::endl;
+          }
         </code>
       </pre>
 
-      <p>Download</p>
+      <h3 class="titulo">Prism.js</h3>
+
+      <h4 class="titulo">Install</h4>
 
       <pre>
         <code class="language-bash">
-          git clone https://github.com/dracula/prism.git
+          $ cd 'path/to/your_website_project'
         </code>
       </pre>
 
-      <p>If you prefer downloading only two files, you can run these commands:</p>
+      <p>Download with...</p>
 
       <pre>
         <code class="language-bash">
-          svn export https://github.com/dracula/prism/trunk/css/dracula-prism.css
-          svn export https://github.com/dracula/prism/trunk/js/prism.js
+          $ git clone https://github.com/dracula/prism.git
         </code>
       </pre>
 
-      <p>If you want to download only these two files to relative paths of your website project the which you did <code class="language-bash">cd</code>, you can run quickly:</p>
+      <p>or...</p>
 
       <pre>
         <code class="language-bash">
@@ -66,15 +73,17 @@
         </code>
       </pre>
 
-      <p>Add two files and PT Mono of Google Webfonts link and do not forget of adding <code class="language-none">.htaccess</code> for allowing the WOFF fonts. The jQuery isn't required.</p>
+      <p>Link your project to these two files and to Google Webfonts' PT Mono. Do not forget to add
+        <code class="language-none">.htaccess</code> in order to allow the WOFF fonts. jQuery isn't
+        required.</p>
 
       <pre>
         <code class="language-html">
-          &lt;!-- Put this in the head -->
+          &lt;!-- Paste this in head -->
           &lt;link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
           &lt;link rel="stylesheet" href="css/dracula-prism.css">
 
-          &lt;!-- Put them in the end of the file -->
+          &lt;!-- Paste this at the end of the file -->
           &lt;script src="js/prism.js">&lt;/script>
           &lt;script type="text/javascript">
             Prism.plugins.NormalizeWhitespace.setDefaults(
@@ -93,47 +102,56 @@
         </code>
       </pre>
 
-      <p>Finally, add a code by, finishing with <code class="language-none">language-xxx</code>. Check the <a href="https://github.com/LeaVerou">Lea Verou</a>’s site about the supported languages: <a href="http://prismjs.com/#languages-list" name="List of Supported Languages">http://prismjs.com/#languages-list</a>.</p>
+      <h4 class="titulo">Using the theme</h4>
+
+      <p>Add a snippet to your website like this and replace
+        <code class="language-none">language-xxx</code> by one of the
+        <a href="http://prismjs.com/#languages-list" name="List of Supported Languages" target="blank">supported languages</a>.</p>
 
       <pre>
         <code class="language-html">
           &lt;pre>
             &lt;code class="language-xxx line-numbers">
-            your codes
+              your snippet
             &lt;/code>
           &lt;/pre>
         </code>
       </pre>
 
-      <p>If you want to limit the <code class="language-html">pre</code> height to among 300 and 800px, you can add <code class="language-html">&lt;pre class="limit-xxx"> ... &lt;/pre></code>, choosing 300px, 400px, 500px, 600px, 700px or 800px:</p>
+      <p>If you want to limit the <code class="language-html">pre</code> height to 300, 400, ...,
+        800px, you can add <code class="language-html">&lt;pre class="limit-xxx"> ... &lt;/pre></code>
+        :</p>
 
       <pre>
         <code class="language-html">
           &lt;pre class="limit-300">
             &lt;code class="language-xxx line-numbers">
-            your codes
+              your snippet
             &lt;/code>
           &lt;/pre>
         </code>
       </pre>
 
-      <p>Observe that the customised scrollbar works only in the webkit-based browsers. If you want the scrollbar to be like in all browsers, you can use:</p>
+      <p>Note that the customised scrollbar works only in the webkit-based browsers. If you want
+        your scrollbars to be the same in all browsers, you can use:</p>
       
       <ul>
-        <li><a href="https://github.com/Diokuz/baron">Baron</a></li>
-        <li><a href="https://github.com/gromo/jquery.scrollbar">jQuery Scrollbar</a></li>
-        <li><a href="https://github.com/malihu/malihu-custom-scrollbar-plugin">Malihu</a></li>
-        <li><a href="https://github.com/inuyaksa/jquery.nicescroll">NiceScroll</a></li>
-        <li><a href="https://github.com/noraesae/perfect-scrollbar">Perfect Scrollbar</a></li>
-        <li><a href="https://github.com/malte-wessel/react-custom-scrollbars">React Custom Scrollbars</a></li>
-        <li><a href="https://github.com/Grsmto/simplebar">SimpleBar</a></li>
+        <li><a href="https://github.com/Diokuz/baron" target="blank">Baron</a></li>
+        <li><a href="https://github.com/gromo/jquery.scrollbar" target="blank">jQuery Scrollbar</a></li>
+        <li><a href="https://github.com/malihu/malihu-custom-scrollbar-plugin" target="blank">Malihu</a></li>
+        <li><a href="https://github.com/inuyaksa/jquery.nicescroll" target="blank">NiceScroll</a></li>
+        <li><a href="https://github.com/noraesae/perfect-scrollbar" target="blank">Perfect Scrollbar</a></li>
+        <li><a href="https://github.com/malte-wessel/react-custom-scrollbars" target="blank">React Custom Scrollbars</a></li>
+        <li><a href="https://github.com/Grsmto/simplebar" target="blank">SimpleBar</a></li>
       </ul>
 
-      <h3 id="demo">Demo</h3>
+      <h3 class="titulo" id="demo">Demo</h3>
 
-      <h4>CSS, HTML and Javascript Mixed</h4>
+      <h4 class="titulo">CSS, HTML and Javascript Mixed</h4>
 
-      <pre class="limit-300"><code class="language-markup line-numbers">&lt;!DOCTYPE html>
+      <pre class="limit-300">
+        <code class="language-markup line-numbers">
+          &lt;!DOCTYPE html>
           &lt;html lang="en">
           &lt;head>
             &lt;meta charset="utf-8" />
@@ -157,7 +175,7 @@
         </code>
       </pre>
 
-      <h4>C-Like</h4>
+      <h4 class="titulo">C-Like</h4>
 
       <pre class="limit-300">
         <code class="language-clike line-numbers">
@@ -184,7 +202,7 @@
         </code>
       </pre>
 
-      <h4>C++ Language</h4>
+      <h4 class="titulo">C++ Language</h4>
 
       <pre class="limit-300">
         <code class="language-c line-numbers">
@@ -232,7 +250,7 @@
         </code>
       </pre>
 
-      <h4>Go</h4>
+      <h4 class="titulo">Go</h4>
 
       <pre class="limit-300">
         <code class="language-go line-numbers">
@@ -252,7 +270,7 @@
         </code>
       </pre>
 
-      <h4>Java</h4>
+      <h4 class="titulo">Java</h4>
 
       <pre class="limit-300">
         <code class="language-java line-numbers">
@@ -303,7 +321,7 @@
         </code>
       </pre>
 
-      <h4>JavaScript</h4>
+      <h4 class="titulo">JavaScript</h4>
 
       <pre class="limit-300">
         <code class="language-javascript line-numbers">
@@ -330,7 +348,7 @@
         </code>
       </pre>
 
-      <h4>PHP</h4>
+      <h4 class="titulo">PHP</h4>
 
       <pre class="limit-300">
         <code class="language-php line-numbers">
@@ -396,7 +414,7 @@
         </code>
       </pre>
 
-      <h4>Python</h4>
+      <h4 class="titulo">Python</h4>
 
       <pre class="limit-300">
         <code class="language-python line-numbers">
@@ -417,7 +435,7 @@
         </code>
       </pre>
 
-      <h4>Ruby</h4>
+      <h4 class="titulo">Ruby</h4>
 
       <pre class="limit-300">
         <code class="language-ruby line-numbers">
@@ -450,7 +468,7 @@
         </code>
       </pre>
 
-      <h4>SQL</h4>
+      <h4 class="titulo">SQL</h4>
 
       <pre class="limit-300">
         <code class="language-sql line-numbers">
@@ -491,7 +509,7 @@
         </code>
       </pre>
 
-      <h4>Swift</h4>
+      <h4 class="titulo">Swift</h4>
 
       <pre class="limit-300">
         <code class="language-swift line-numbers">
@@ -515,9 +533,19 @@
         </code>
       </pre>
 
-      <p class="autoria">Made with the code editor <a href="https://code.visualstudio.com/">Visual Studio Code Insiders</a> by
-        <a class="azul" href="https://github.com/gusbemacbe">Gustavo Costa</a>
-      <br/>on a Mac mini with macOS 10.13 and a HP EliteBook with Ubuntu 16.04 and Windows 10 in Brazil.</p>
+      <h3 class="titulo">Credits</h3>
+
+      <p class="texto">This theme was built with
+        <a href="http://sandrashklyaeva.github.io/prism-theme-builder/" target="blank">Prism Theme builder</a>,
+        developed by Sandras Hklyaeva.</p>
+
+      <p>It uses a new font called PT Mono from Google Fonts, an elegant monoscaped serif font,
+        which looks like Dracula's serif font – Abril Text. It also won a new scrollbar style and
+        is optimised for mobile and bigger monitors.</p>
+
+      <p class="autoria">Made with <span class="love">♥</span> in Brazil by
+        <a href="https://github.com/gusbemacbe" target="blank">Gustavo Costa</a>
+      <br/>under <a href="http://zenorocha.mit-license.org/" target="blank">MIT license</a>
 
     <script src="js/jquery.js"></script>
     <script src="js/prism.js"></script>

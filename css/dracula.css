@@ -7,23 +7,10 @@
   --suez: "Suez";
 
 	/* Tipografia */
-	--fonte-base: 112.5%;
 	--altura-linha: 1.5;
-
-	/* Escala tipográfica */
-	--ratio: 1.414; /* 4 vezes aumentado */
-
-	/* Cada passo da escala é um poder de --ratio*/
-	--stepUp1: calc(1em * var(--ratio));
-	--stepUp2: calc(var(--stepUp1) * var(--ratio));
-	--stepUp3: calc(var(--stepUp2) * var(--ratio));
-	--stepDown1: calc(1em / var(--ratio));
 
 	/* Cores */
   --azul: #66D9EF; 
-  --amarelo: #E6DB74;
-	--laranja: #FFB86C;
-  --verde: #50FA7B;
   --purpura: #858FA6;
   --rosa: #DC68AA;
 }
@@ -32,7 +19,6 @@
 {
 	font-family: "PT Mono";
 	font-style: normal;
-	font-weight: 400;
 	src: url("../fonts/pt-mono.woff") format("woff");
 }
 
@@ -40,7 +26,6 @@
 {
 	font-family: "Source";
 	font-style: normal;
-	font-weight: 400;
 	src: url("../fonts/source-regular.woff") format("woff");
 }
 
@@ -48,7 +33,6 @@
 {
 	font-family: "Source";
 	font-style: italic;
-	font-weight: 400;
 	src: url("../fonts/source-italic.woff") format("woff");
 }
 
@@ -56,7 +40,6 @@
 {
 	font-family: "Source";
 	font-style: normal;
-	font-weight: 800;
 	src: url("../fonts/source-bold.woff") format("woff");
 }
 
@@ -64,7 +47,6 @@
 {
 	font-family: "Source";
 	font-style: italic;
-	font-weight: 800;
 	src: url("../fonts/source-bold-italic.woff") format("woff");
 }
 
@@ -72,7 +54,6 @@
 {
 	font-family: "Suez";
 	font-style: normal;
-	font-weight: 400;
 	src: url("../fonts/suez.woff") format("woff");
 }
 
@@ -85,7 +66,7 @@
 
 a
 {
-  color: var(--laranja);
+  color: var(--azul);
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
@@ -98,7 +79,7 @@ a.azul
 
 a:hover
 {
-  color: var(--amarelo);
+  color: var(--azul);
   text-decoration: none;
 }
 
@@ -149,7 +130,6 @@ pre code
 html 
 {
   font-family: var(--source-sans), sans-serif;
-  font-size: var(--fonte-base) !important;
   line-height: 1.15 !important;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -167,28 +147,23 @@ html [type="button"]
   width: device-width;
 }
 
-h1, h2, h3, h4, h5, h6 
+h1
 {
-  padding: 10px;
+  color: var(--azul);
+  font-size: 3.5em;
+  text-align: center;
 }
 
 h2
 {
-  font-weight: 400;
   text-align: center;
+  font-size: 1.5em;
 }
 
 h3
 {
-  color: var(--amarelo);
-  font-weight: 800;
-  text-align: center;
-}
-
-h4
-{
-  color: var(--rosa);
-  font-family: var(--suez);
+  color: var(--azul);
+  font-size: 2.5em;
 }
 
 img[dracula]
@@ -196,7 +171,7 @@ img[dracula]
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 400px;
+  width: 200px;
   text-align: center;
 }
 
@@ -240,32 +215,17 @@ samp
 
 .titulo
 {
-  color: var(--verde);
   font-family: var(--suez);
   margin-top: 20px;
+}
+
+.gh-btns
+{
   text-align: center;
+  margin: 3em 0 3em 0;
 }
 
-@media screen and (min-width: 320px) 
-{
-	html 
-	{
-		font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
-	}
-}
-
-@media screen and (min-width: 1000px) 
-{
-	html 
-	{
-		font-size: 20px !important;
-	}
-}
-
-@media screen and (min-width: 1920px) 
-{woff
-	html
-	{
-		font-size: 24px !important;
-	}
+.love {
+  font-size: 1.4em;
+  color: var(--rosa);
 }
