@@ -46,34 +46,25 @@
         </code>
       </pre>
 
-      <h3 class="titulo">Install</h3>
+      <h3 class="titulo">Prism.js</h3>
 
-      <p>Make <code class="language-bash">cd</code> to your website project:</p>
-
-      <pre>
-        <code class="language-bash">
-          cd 'path/to/your_project'
-        </code>
-      </pre>
-
-      <p>Download</p>
+      <h4 class="titulo">Install</h4>
 
       <pre>
         <code class="language-bash">
-          git clone https://github.com/dracula/prism.git
+          $ cd 'path/to/your_website_project'
         </code>
       </pre>
 
-      <p>If you prefer downloading only two files, you can run these commands:</p>
+      <p>Download with...</p>
 
       <pre>
         <code class="language-bash">
-          svn export https://github.com/dracula/prism/trunk/css/dracula-prism.css
-          svn export https://github.com/dracula/prism/trunk/js/prism.js
+          $ git clone https://github.com/dracula/prism.git
         </code>
       </pre>
 
-      <p>If you want to download only these two files to relative paths of your website project the which you did <code class="language-bash">cd</code>, you can run quickly:</p>
+      <p>or...</p>
 
       <pre>
         <code class="language-bash">
@@ -82,15 +73,17 @@
         </code>
       </pre>
 
-      <p>Add two files and PT Mono of Google Webfonts link and do not forget of adding <code class="language-none">.htaccess</code> for allowing the WOFF fonts. The jQuery isn't required.</p>
+      <p>Link your project to these two files and to Google Webfonts' PT Mono. Do not forget to add
+        <code class="language-none">.htaccess</code> in order to allow the WOFF fonts. jQuery isn't
+        required.</p>
 
       <pre>
         <code class="language-html">
-          &lt;!-- Put this in the head -->
+          &lt;!-- Paste this in head -->
           &lt;link href="https://fonts.googleapis.com/css?family=PT+Mono&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
           &lt;link rel="stylesheet" href="css/dracula-prism.css">
 
-          &lt;!-- Put them in the end of the file -->
+          &lt;!-- Paste this at the end of the file -->
           &lt;script src="js/prism.js">&lt;/script>
           &lt;script type="text/javascript">
             Prism.plugins.NormalizeWhitespace.setDefaults(
@@ -109,34 +102,38 @@
         </code>
       </pre>
 
-      <p>Finally, add a code by, finishing with <code class="language-none">language-xxx</code>.
-        Check the <a href="https://github.com/LeaVerou" target="blank">Lea Verou</a>’s site about
-        the supported languages:
-        <a href="http://prismjs.com/#languages-list" name="List of Supported Languages" target="blank">http://prismjs.com/#languages-list</a>.</p>
+      <h4 class="titulo">Using the theme</h4>
+
+      <p>Add a snippet to your website like this and replace
+        <code class="language-none">language-xxx</code> by one of the
+        <a href="http://prismjs.com/#languages-list" name="List of Supported Languages" target="blank">supported languages</a>.</p>
 
       <pre>
         <code class="language-html">
           &lt;pre>
             &lt;code class="language-xxx line-numbers">
-            your codes
+              your snippet
             &lt;/code>
           &lt;/pre>
         </code>
       </pre>
 
-      <p>If you want to limit the <code class="language-html">pre</code> height to among 300 and 800px, you can add <code class="language-html">&lt;pre class="limit-xxx"> ... &lt;/pre></code>, choosing 300px, 400px, 500px, 600px, 700px or 800px:</p>
+      <p>If you want to limit the <code class="language-html">pre</code> height to 300, 400, ...,
+        800px, you can add <code class="language-html">&lt;pre class="limit-xxx"> ... &lt;/pre></code>
+        :</p>
 
       <pre>
         <code class="language-html">
           &lt;pre class="limit-300">
             &lt;code class="language-xxx line-numbers">
-            your codes
+              your snippet
             &lt;/code>
           &lt;/pre>
         </code>
       </pre>
 
-      <p>Observe that the customised scrollbar works only in the webkit-based browsers. If you want the scrollbar to be like in all browsers, you can use:</p>
+      <p>Note that the customised scrollbar works only in the webkit-based browsers. If you want
+        your scrollbars to be the same in all browsers, you can use:</p>
       
       <ul>
         <li><a href="https://github.com/Diokuz/baron" target="blank">Baron</a></li>
