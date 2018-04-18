@@ -98,6 +98,23 @@ body
   background: #3c4556;
   color: #fff;
   padding: 30px;
+  font-size: 14px !important;
+}
+
+@media screen and (min-width: 320px)
+{
+  body
+  {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 680)) !important;
+  }
+}
+
+@media screen and (min-width: 1000px)
+{
+  body
+  {
+    font-size: 16px !important;
+  }
 }
 
 code, pre, samp 
