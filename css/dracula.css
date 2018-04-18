@@ -23,8 +23,9 @@
   --azul: #66D9EF; 
   --amarelo: #E6DB74;
 	--laranja: #FFB86C;
-  --verde: #50fa7b;
-  --purpura: #858fa6;
+  --verde: #50FA7B;
+  --purpura: #858FA6;
+  --rosa: #DC68AA;
 }
 
 @font-face
@@ -179,9 +180,15 @@ h2
 
 h3
 {
-  color: var(--verde);
+  color: var(--amarelo);
   font-weight: 800;
   text-align: center;
+}
+
+h4
+{
+  color: var(--rosa);
+  font-family: var(--suez);
 }
 
 img[dracula]

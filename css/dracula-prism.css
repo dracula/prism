@@ -101,6 +101,36 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
+.limit-300
+{
+  height: 300px !important;
+}
+
+.limit-400
+{
+  height: 400px !important;
+}
+
+.limit-500
+{
+  height: 500px !important;
+}
+
+.limit-600
+{
+  height: 600px !important;
+}
+
+.limit-700
+{
+  height: 700px !important;
+}
+
+.limit-800
+{
+  height: 800px !important;
+}
+
 .token.comment {
   color: rgba(98, 114, 164, 1);
 }
