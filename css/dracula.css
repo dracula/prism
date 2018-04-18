@@ -224,3 +224,8 @@ samp
   text-align: center;
   margin: 3em 0 3em 0;
 }
+
+.love {
+  font-size: 1.4em;
+  color: var(--rosa);
+}
