@@ -11,9 +11,6 @@
 
 	/* Cores */
   --azul: #66D9EF; 
-  --amarelo: #E6DB74;
-	--laranja: #FFB86C;
-  --verde: #50FA7B;
   --purpura: #858FA6;
   --rosa: #DC68AA;
 }
@@ -69,7 +66,7 @@
 
 a
 {
-  color: var(--laranja);
+  color: var(--azul);
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
 }
@@ -82,7 +79,7 @@ a.azul
 
 a:hover
 {
-  color: var(--amarelo);
+  color: var(--azul);
   text-decoration: none;
 }
 
@@ -152,7 +149,7 @@ html [type="button"]
 
 h1
 {
-  color: var(--verde);
+  color: var(--azul);
   font-size: 3.5em;
   text-align: center;
 }
@@ -160,6 +157,7 @@ h1
 h2
 {
   text-align: center;
+  font-size: 1.5em;
 }
 
 h3
@@ -173,7 +171,7 @@ img[dracula]
   display: block;
   height: auto;
   margin: 0 auto;
-  width: 400px;
+  width: 200px;
   text-align: center;
 }
 
@@ -219,4 +217,10 @@ samp
 {
   font-family: var(--suez);
   margin-top: 20px;
+}
+
+.gh-btns
+{
+  text-align: center;
+  margin: 3em 0 3em 0;
 }
