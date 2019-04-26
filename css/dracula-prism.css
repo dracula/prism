@@ -248,11 +248,11 @@ pre[class*="language-"] {
   color: #ff79c6;
 }
 
-.langague-cpp .token.string {
+.language-cpp .token.string {
   color: #8be9fd;
 }
 
-.langague-c .token.string {
+.language-c .token.string {
   color: #8be9fd;
 }
 
