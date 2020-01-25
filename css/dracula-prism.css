@@ -173,7 +173,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-  color: rgba(230, 219, 116, 1);
+  color: white;
 }
 
 .token.number {
