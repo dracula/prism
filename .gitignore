@@ -1,0 +1,22 @@
+# Ignorar os ficheiros sujos macOS DS_Store
+.DS_Store
+._.DS_Store
+*.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# Ignorar os ficheiros sujos .directory do Dolphin
+*.directory
+**/.directory
+
+# Não guardar os caches de Firebase no repositório do GitHub/GitLab
+**/.firebase
+
+# Não guardar a pasta compilada 
+builds
+
+# Não guardar a pasta node_modules
+node_modules
+
+# Não guardar as pastas .git
+testes/**/*.git
