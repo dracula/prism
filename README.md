@@ -2,7 +2,7 @@
 
 > A dark theme for [Prism.js](http://prismjs.com).
 
-![Screenshot](images/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Install
 
