@@ -1,5 +1,7 @@
 {
-  "workbench.colorCustomizations": {
+  "liveServer.settings.CustomBrowser": "firefox",
+  "workbench.colorCustomizations": 
+  {
     "activityBarBadge.background": "#E5CD52",
     "activityBar.border": "#E5CD52",
     "editorWidget.border": "#4FB4D7",
@@ -10,5 +12,6 @@
     "scrollbarSlider.background": "#E5CD52",
     "scrollbarSlider.hoverBackground": "#4FB4D750",
     "textLink.foreground": "#EF7C2A"
-  }
+  },
+  "workbench.colorTheme": "Dracula",
 }

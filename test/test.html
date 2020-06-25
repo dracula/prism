@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dracula — A dark theme for Prism.js and 50+ apps</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/dracula.css">
+    <link rel="stylesheet" href="css/dracula-prism.css">
+    <link rel="icon" type="image/x-icon" href="https://draculatheme.com/assets/img/favicon.ico">
+    <style>
+      code[class*="language-"],
+      pre[class*="language-"] 
+      {
+        font-family: "VictorMono Nerd Font", monospace;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <pre>
+      <code class="language-css">
+      *{} * {} p {}
+
+      ul,
+      ol {}
+
+      p { color: red; }
+
+      p {
+          color: red !important;
+          line-height: normal!important;
+          font-size: 16px;
+      }
+
+      p { position: absolute !important}
+
+      @media screen and (min-width: 100px) {}
+
+      @main-color: red;
+
+      .foo 
+      {
+        background: @main-color;
+      }
+
+      /* Simple comment here */
+
+      .exemplo
+      {
+        font-family: "Bahnschrift SemiCondensed", sans serif;
+      }
+
+      #exemplo
+      {
+        content: 'foo';
+        content: "foo";
+        content: url(foo.png);
+        content: url('foo.png');
+        content: url("foo.png");
+      }
+      </code>
+    </pre>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/prism-dracula.js"></script>
+    <script type="text/javascript">
+      Prism.plugins.NormalizeWhitespace.setDefaults(
+        {
+          'remove-trailing': true,
+          'remove-indent': true,
+          'left-trim': true,
+          'right-trim': true,
+          // 'break-lines': 10,
+          // 'indent': 2,
+          // 'remove-initial-line-feed': false,
+          // 'tabs-to-spaces': 4,
+          // 'spaces-to-tabs': 4
+        });
+    </script>
+    
+  </body>
+</html>

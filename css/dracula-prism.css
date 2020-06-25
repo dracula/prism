@@ -284,7 +284,17 @@ pre[class*="language-"]
   height: 800px !important;
 }
 
+.language-css
+{
+  color: var(--purple);
+}
+
 .token 
+{
+  color: var(--pink);
+}
+
+.language-css .token 
 {
   color: var(--pink);
 }
@@ -307,6 +317,11 @@ pre[class*="language-"]
 .token.atrule, .token.attr-name, .token.attr-value 
 {
   color: var(--green);
+}
+
+.language-css .token.atrule 
+{
+  color: var(--purple);
 }
 
 .language-html .token.attr-value, .language-markup .token.attr-value 
@@ -350,7 +365,22 @@ pre[class*="language-"]
   color: var(--green);
 }
 
-.language-html .token.entity 
+.language-html .token.entity.named-entity
+{
+  color: var(--purple);
+}
+
+.language-html .token.entity:not(.named-entity) 
+{
+  color: var(--pink);
+}
+
+.language-markup .token.entity.named-entity
+{
+  color: var(--purple);
+}
+
+.language-markup .token.entity:not(.named-entity) 
 {
   color: var(--pink);
 }
@@ -358,6 +388,11 @@ pre[class*="language-"]
 .token.function 
 {
   color: var(--green);
+}
+
+.language-css .token.function 
+{
+  color: var(--cyan);
 }
 
 .token.important, .token.keyword 
@@ -375,9 +410,19 @@ pre[class*="language-"]
   color: var(--orange);
 }
 
+.language-css .token.property 
+{
+  color: var(--cyan);
+}
+
 .token.punctuation 
 {
   color: var(--pink);
+}
+
+.language-css .token.punctuation
+{
+  color: var(--orange);
 }
 
 .language-html .token.punctuation, .language-markup .token.punctuation 
@@ -392,12 +437,17 @@ pre[class*="language-"]
 
 .language-css .token.selector 
 {
-  color: var(--pink);
+  color: var(--green);
 }
 
 .token.regex 
 {
   color: var(--red);
+}
+
+.language-css .token.rule:not(.atrule)
+{
+  color: var(--foreground);
 }
 
 .token.string 
@@ -413,6 +463,11 @@ pre[class*="language-"]
 .token.url 
 {
   color: var(--cyan);
+}
+
+.language-css .token.url 
+{
+  color: var(--orange);
 }
 
 .token.variable 
