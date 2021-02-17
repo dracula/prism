@@ -1,19 +1,16 @@
 {
   "name": "dracula-prism",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A dark theme for Prism.js",
   "main": "index.js",
-  "scripts": 
-  {
+  "scripts": {
     "test": "echo 'Hello from Transilvania'"
   },
-  "repository": 
-  {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/dracula/prism.git"
   },
-  "keywords": 
-  [
+  "keywords": [
     "dark",
     "dark-theme",
     "dracula",
@@ -24,15 +21,16 @@
   ],
   "author": "Gustavo Reis",
   "license": "MIT",
-  "bugs": 
-  {
+  "bugs": {
     "url": "https://github.com/dracula/prism/issues"
   },
   "homepage": "https://github.com/dracula/prism#readme",
-  "dependencies": 
-  {
+  "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "prismjs": "^1.23.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6"
   }
 }

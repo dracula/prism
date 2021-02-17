@@ -34,6 +34,36 @@ http://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascr
   --purple:     #BD93F9;
   --red:        #FF5555;
   --yellow:     #F1FA8C;
+
+  /* Transparency */
+
+  /** 30% of transparency **/
+  --background-30: #282A3633;
+  --comment-30:    #6272A433;
+  --foreground-30: #F8F8F233;
+  --selection-30:  #44475A33;
+
+  --cyan-30:       #8BE9FD33;
+  --green-30:      #50FA7B33;
+  --orange-30:     #FFB86C33;
+  --pink-30:       #FF79C633;
+  --purple-30:     #BD93F933;
+  --red-30:        #FF555533;
+  --yellow-30:     #F1FA8C33;
+
+  /** 40% of transparency **/
+  --background-40: #282A3666;
+  --comment-40:    #6272A466;
+  --foreground-40: #F8F8F266;
+  --selection-40:  #44475A66;
+
+  --cyan-40:       #8BE9FD66;
+  --green-40:      #50FA7B66;
+  --orange-40:     #FFB86C66;
+  --pink-40:       #FF79C666;
+  --purple-40:     #BD93F966;
+  --red-40:        #FF555566;
+  --yellow-40:     #F1FA8C66;
 }
 
 pre::-webkit-scrollbar 
@@ -259,7 +289,7 @@ pre[class*="language-"]
   height: 300px !important;
 }
 
-.limit-400
+.limit-300
 {
   height: 400px !important;
 }
@@ -495,7 +525,8 @@ pre[class*="language-"]
   color: rgba(255, 184, 108, 1);
 }
 
-.token.deleted {
+.token.deleted 
+{
   color: #e2777a;
 }
 
@@ -503,3 +534,52 @@ pre[class*="language-"]
 {
   color: #e2777a;
 }
+
+/* Line Highlighter */
+
+.highlight-line
+{
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+
+.highlight-line:empty:before
+{
+  content: " ";
+}
+
+.highlight-line:not(:last-child)
+{
+  min-width: 100%;
+}
+
+.highlight-line .highlight-line:not(:last-child)
+{
+  min-width: 0;
+}
+
+.highlight-line-isdir
+{
+  color: var(--foreground);
+  background-color: var(--selection-30);
+}
+
+.highlight-line-active
+{
+  background-color: var(--comment-30);
+}
+
+.highlight-line-add
+{
+  background-color: var(--green-30);
+}
+
+.highlight-line-remove
+{
+  background-color: var(--red-30);
+}
+ 

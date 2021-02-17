@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dracula — Test – Highlighter Test</title>
+    <link rel="stylesheet" href="../src/css/unofficial.css">
+    <link rel="stylesheet" href="../src/css/dracula-prism.css">
+    <link rel="icon" type="image/x-icon" href="https://draculatheme.com/static/img/favicon.ico">
+  </head>
+
+  <body>
+
+    <h1>Highlighter Test</h1>
+    <h2 class="subtitle">Analysing the higlight marker in the code</h2>
+
+<pre class="language-javascript">
+  <code class="language-javascript">
+    <span class="highlight-line"><span class="token comment">// this is a command</span></span>
+    <mark class="highlight-line highlight-line-active"><span class="token keyword">const</span> syntaxHighlight <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@11ty/eleventy-plugin-syntaxhighlight"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></mark>
+    <span class="highlight-line">module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">eleventyConfig</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+    <mark class="highlight-line highlight-line-active">  eleventyConfig<span class="token punctuation">.</span><span class="token function">addPlugin</span><span class="token punctuation">(</span>syntaxHighlight<span class="token punctuation">,</span> <span class="token punctuation">{</span></mark>
+      
+    <mark class="highlight-line highlight-line-active">    <span class="token comment">// Change which syntax highlighters are installed</span></mark>
+    <span class="highlight-line">    templateFormats<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"*"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// default</span></span>
+    <span class="highlight-line"></span>
+    <span class="highlight-line">    <span class="token comment">// Or, just njk and md syntax highlighters (do not install liquid)</span></span>
+    <span class="highlight-line">    <span class="token comment">// templateFormats: ["njk", "md"],</span></span>
+    <span class="highlight-line"></span>
+    <span class="highlight-line">    <span class="token comment">// init callback lets you customize Prism</span></span>
+    <span class="highlight-line">    <span class="token function-variable function">init</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> Prism <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+    <span class="highlight-line">      Prism<span class="token punctuation">.</span>languages<span class="token punctuation">.</span>myCustomLanguage <span class="token operator">=</span> <span class="token comment">/* */</span><span class="token punctuation">;</span></span>
+    <span class="highlight-line">    <span class="token punctuation">}</span></span>
+    <span class="highlight-line"></span>
+    <span class="highlight-line">    <span class="token comment">// Added in 3.0, set to true to always wrap lines in `&lt;span class="highlight-line"&gt;`</span></span>
+    <span class="highlight-line">    <span class="token comment">// The default (false) only wraps when line numbers are passed in.</span></span>
+    <span class="highlight-line">    alwaysWrapLineHighlights<span class="token operator">:</span> <span class="token boolean">false</span></span>
+    <span class="highlight-line">  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+    <span class="highlight-line"><span class="token punctuation">}</span><span class="token punctuation">;</span></span>
+  </code>
+</pre>
+
+  </body>
+
+</html>
