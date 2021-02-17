@@ -1,0 +1,327 @@
+@import url("https://use.typekit.net/lcd0cmo.css");
+
+/* Source Code Pro – Monospaced font */
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Mono";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/source-code-pro-light.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Mono";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/source-code-pro-bold.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Mono";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/source-code-pro-light.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Mono";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/source-code-pro-bold.ttf") format("truetype");
+}
+
+/* Source Sans Pro – Sans-serifed font */
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/source-sans-pro-light.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/source-sans-pro-bold.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/source-sans-pro-light.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-display: swap;
+  font-family: "Source Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/source-sans-pro-bold.ttf") format("truetype");
+}
+
+:root
+{
+	/* 🇧🇷 Fontes */
+	/* 🇬🇧 Fonts */
+  --abril: abril-fatface, serif;
+	--source-mono: "Source Mono", monospace;
+	--source-sans: "Source Sans", sans-serif;
+
+	/* 🇧🇷 Tipografia */
+	/* 🇬🇧 Typography */
+	--line-height: 1.5;
+
+	/* 🇧🇷 Cores */
+	/* 🇬🇧 Colours */
+  --blue: #66D9EF; 
+  --green: #50FA7B;
+  --orange: #FFB86C;
+  --pink: #DC68AA;
+  --purple: #383A59;
+  --white: #F2F2F2;
+}
+
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+}
+
+html 
+{
+  font-family: var(--source-sans);
+  line-height: 1.15 !important;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+       -o-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+html [type="button"] 
+{
+  -webkit-appearance: button;
+}
+
+@-ms-viewport 
+{
+  width: device-width;
+}
+
+body
+{
+  background: var(--purple);
+  background: var(--background);
+  color: var(--white);
+  font-family: var(--source-sans);
+  font-size: 16px;
+  padding: 30px;
+}
+
+a
+{
+  color: var(--blue);
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+
+a.blue
+{
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:[title]:hover:after
+{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 20;
+}
+
+code, pre, samp 
+{
+  font-family: var(--sans-mono);
+}
+
+code 
+{
+  word-break: break-word;
+}
+
+a > code 
+{
+  color: inherit;
+}
+
+pre 
+{
+  display: block;
+}
+
+pre code 
+{
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+
+h1
+{
+  color: var(--blue);
+  font-size: 72px;
+  text-align: center;
+}
+
+h2
+{
+  font-family: var(--source-sans);
+  font-size: 2em;
+  font-weight: 300;
+  margin: 1em 0 .3em;
+}
+
+h2.subtitle
+{
+  font-family: var(--source-sans);
+  font-size: 28px;
+  text-align: center;
+}
+
+h3
+{
+  color: var(--blue);
+  font-family: var(--abril);
+  font-size: 3em;
+}
+
+h4 
+{
+  font-size: 2em;
+  font-weight: 300;
+  margin: 1em 0 .3em;
+}
+
+img[prism]
+{
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  width: 220px;
+}
+
+p
+{
+  margin: 0 0 .5em;
+  text-align: justify;
+}
+
+samp
+{
+  background: var(--purple);
+  -webkit-border-radius: 0.4em;
+	   -moz-border-radius: 0.4em;
+	        border-radius: 0.4em;
+	border: none;
+	color: var(--white) !important;
+	display: inline-block;
+	font-family: var(--sans-mono), monospace;
+	margin: -1px 0;
+	padding: 0 .3em;
+	white-space: no-wrap;
+}
+
+.autoria
+{
+  padding: 50px;
+  text-align: center;
+}
+
+.title
+{
+  font-family: var(--abril);
+  margin-top: 20px;
+}
+
+.gh-btns
+{
+  text-align: center;
+  margin: 3em 0 3em 0;
+}
+
+.gh-btns iframe
+{
+  border: 0px solid transparent;
+}
+
+.love 
+{
+  color: var(--pink);
+  font-size: 1.4em;
+
+  display: inline-block;
+  position: relative;
+  top: .2em;
+  transform: scale(.9);
+  animation: love .5s linear infinite alternate-reverse;
+}
+
+@keyframes love 
+{
+  to 
+  {
+   transform: scale(1.1)
+  }
+ }
+
+@media screen and (min-width: 320px)
+{
+  body
+  {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 680)) !important;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  img[dracula]
+  {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px)
+{
+  body
+  {
+    font-size: 16px !important;
+  }
+}

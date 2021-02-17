@@ -6,70 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dracula — A dark theme for Prism.js and 50+ apps</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/dracula.css">
-    <link rel="stylesheet" href="css/dracula-prism.css">
-    <link rel="icon" type="image/x-icon" href="https://draculatheme.com/assets/img/favicon.ico">
-    <style>
-      code[class*="language-"],
-      pre[class*="language-"] 
-      {
-        font-family: "VictorMono Nerd Font", monospace;
-        font-size: 14px;
-      }
-    </style>
+    <link rel="stylesheet" href="../src/css/unofficial.css">
+    <link rel="stylesheet" href="../src/css/dracula-prism.css">
+    <link rel="icon" type="image/x-icon" href="https://draculatheme.com/static/img/favicon.ico">
   </head>
 
   <body>
 
-    <pre>
-      <code class="language-css">
-      *{} * {} p {}
+    <h1>Synthax Highlight Test</h1>
+    <h2 class="subtitle">Analysing new synthax colours</h2>
 
-      ul,
-      ol {}
+<pre>
+  <code class="language-css">
+  *{} * {} p {}
 
-      p { color: red; }
+  ul,
+  ol {}
 
-      p {
-          color: red !important;
-          line-height: normal!important;
-          font-size: 16px;
-      }
+  p { color: red; }
 
-      p { position: absolute !important}
+  p {
+      color: red !important;
+      line-height: normal!important;
+      font-size: 16px;
+  }
 
-      @media screen and (min-width: 100px) {}
+  p { position: absolute !important}
 
-      @main-color: red;
+  @media screen and (min-width: 100px) {}
 
-      .foo 
-      {
-        background: @main-color;
-      }
+  @main-color: red;
 
-      /* Simple comment here */
+  .foo 
+  {
+    background: @main-color;
+  }
 
-      .exemplo
-      {
-        font-family: "Bahnschrift SemiCondensed", sans serif;
-      }
+  /* Simple comment here */
 
-      #exemplo
-      {
-        content: 'foo';
-        content: "foo";
-        content: url(foo.png);
-        content: url('foo.png');
-        content: url("foo.png");
-      }
-      </code>
-    </pre>
+  .exemplo
+  {
+    font-family: "Bahnschrift SemiCondensed", sans serif;
+  }
 
-    <script src="js/jquery.js"></script>
-    <script src="js/prism-dracula.js"></script>
+  #exemplo
+  {
+    content: 'foo';
+    content: "foo";
+    content: url(foo.png);
+    content: url('foo.png');
+    content: url("foo.png");
+  }
+  </code>
+</pre>
+
+    <script src="../src/js/jquery.js"></script>
+    <script src="../src/js/prism.js"></script>
     <script type="text/javascript">
       Prism.plugins.NormalizeWhitespace.setDefaults(
         {
@@ -84,6 +76,5 @@
           // 'spaces-to-tabs': 4
         });
     </script>
-    
   </body>
 </html>

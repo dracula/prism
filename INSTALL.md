@@ -7,7 +7,13 @@ All instructions can be found [here](https://draculatheme.com/prism/).
 #### Using directly from the UNPKG CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/dracula-prism/css/dracula-prism.css">
+<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css">
+```
+
+Or the minified file:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css">
 ```
 
 - More info: <https://unpkg.com>
