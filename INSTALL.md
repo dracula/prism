@@ -20,10 +20,22 @@ Or the minified file:
 
 #### With Node or another build system
 
-You can install with the command npm i dracula-prism` which comes ready with Prismjs installed. 
+You can install with the command `npm i dracula-prism` which comes ready with Prismjs installed. 
 
 If you're using Node or Webpack or Rollup or Browserify, etc., simply apply:
 
-```javascript
+```js
 require('dracula-prism');
 ```
+
+#### For React and ReactJS users
+
+You can import simply two libraries:
+
+```js
+import Prism from "prism";
+import "css/dracula-prism.css";
+```
+
+You can get the <a href="test/Test – React with Dracula-themed Prism.html">sample React code for a website</a> or the <a href="test/src/index.jsx">sample JSX code</a>:
+

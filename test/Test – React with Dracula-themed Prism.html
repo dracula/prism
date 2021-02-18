@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="../src/css/unofficial.css">
+    <link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/prismjs@1.23.0/prism.js"></script>
+    <title>Dracula – Test – React with Dracula-themed Prism</title>
+  </head>
+
+  <body>
+    <h1>React with Dracula-themed Prism</h1>
+    <h2 class="subtitle">Analysing React and Primjs, using the Dracula theme</h2>
+    <div id="html"></div>
+    <div id="js"></div>
+
+    <script type="text/babel">
+    'use strict';
+
+const html = 
+(
+  `<div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+</div>`);
+
+const js = (
+`onSubmit(e)
+{
+  e.preventDefault();
+  const job = 
+  { 
+    title: 'Developer', 
+    company: 'Facebook' 
+  }; 
+}`);
+
+    class HtmlExample extends React.Component 
+    {
+      componentDidMount() 
+      {
+        Prism.highlightAll();
+      }
+      
+      render() 
+      {
+        return (
+          <pre>
+            <code className="language-html">
+              { html }
+            </code>
+          </pre>
+        );
+      }
+    }
+
+    class JsExample extends React.Component 
+    {
+      componentDidMount() 
+      {
+        Prism.highlightAll();
+      }
+      
+      render() 
+      {
+        return (
+          <pre>
+            <code className="language-javascript">
+              { js }
+            </code>
+          </pre>
+        );
+      }
+    }
+
+    ReactDOM.render(<HtmlExample/>, document.getElementById('html'));
+    ReactDOM.render(<JsExample/>, document.getElementById('js'));    
+    </script>
+  </body>
+</html>
