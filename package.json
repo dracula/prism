@@ -1,6 +1,6 @@
 {
   "name": "dracula-prism",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "A dark theme for Prism.js",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "bootstrap": "^4.6.0",
-    "jquery": "^3.5.1",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
