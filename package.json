@@ -49,6 +49,10 @@
       "react-app/jest"
     ]
   },
+  "files": [
+    "dist",
+    "INSTALL.md"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
