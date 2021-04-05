@@ -1,9 +1,5 @@
 ### [Prism](https://prismjs.com/)
 
-#### Basic
-
-All instructions can be found [here](https://draculatheme.com/prism/).
-
 #### Using directly from the UNPKG CDN
 
 ```html
@@ -37,5 +33,5 @@ import Prism from "prism";
 import "css/dracula-prism.css";
 ```
 
-You can get the <a href="test/Test – React with Dracula-themed Prism.html">sample React code for a website</a> or the <a href="test/src/index.jsx">sample JSX code</a>:
+You can get the <a href="https://github.com/dracula/prism/blob/master/test/Test%20%E2%80%93%20React%20with%20Dracula-themed%20Prism.html">sample React code for a website</a> or the <a href="https://github.com/dracula/prism/blob/master/test/src/index.jsx">sample JSX code</a>:
 
