@@ -1,6 +1,6 @@
 {
   "name": "dracula-prism",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A dark theme for Prism.js",
   "main": "index.js",
   "scripts": {
