@@ -1,6 +1,6 @@
 {
   "name": "dracula-prism",
-  "version": "2.1.15",
+  "version": "2.1.16",
   "description": "A dark theme for Prism.js",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "prismjs",
     "syntax-highlighting"
   ],
-  "author": "Gustavo Reis",
+  "author": "Gustavo Costa",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dracula/prism/issues"
